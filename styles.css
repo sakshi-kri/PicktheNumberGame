@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header h3 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+header a {
+    color: #ff5733;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+    color: #c70039;
+}
+
+h1 {
+    color: #2d2d2d;
+    font-size: 2.5em;
+}
+
+footer {
+    background-color: #007bff;
+    font-size: 1em;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position:relative;
+    overflow:hidden;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.sliding-text {
+    display: flex;
+    animation: slide 15s linear infinite;
+}
+
+.sliding-text span {
+    flex-shrink: 0;
+    padding: 0 50px;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #result {
+        font-size: 1.3em;
+    }
+
+    .btn-group {
+        flex-wrap: wrap;
+    }
+
+    /*.number-btn {
+        margin-bottom: 5px;
+    }*/
+
+    .number-btn {
+        font-size: 1.8rem; /* Increase the font size */
+        padding: 10px 20px; /* Adjust padding to maintain button size */
+        margin: 8px; /* Add some margin between buttons */
+    }
+    
+}
+
+@media (max-width: 480px) {
+    header h3 {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #result {
+        font-size: 1.1em;
+    }
+
+    .sliding-text span {
+        font-size: 1em;
+    }
+}
